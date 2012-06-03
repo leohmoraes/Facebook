@@ -11,10 +11,10 @@
  */
 namespace Facebook\Api\Tests\Units;
 
-require_once __DIR__ . '/../../../library/mageekguy.atoum.phar';
-require_once __DIR__ . '/../../../library/Facebook/Api/Exception.php';
-require_once __DIR__ . '/../../../library/Facebook/Api/Api.php';
-require_once __DIR__ . '/../../../library/Facebook/Api/Client.php';
+require_once __DIR__ . '/../../../src/mageekguy.atoum.phar';
+require_once __DIR__ . '/../../../src/Facebook/Api/Exception.php';
+require_once __DIR__ . '/../../../src/Facebook/Api/Api.php';
+require_once __DIR__ . '/../../../src/Facebook/Api/Client.php';
 
 use mageekguy\atoum;
 use mageekguy\atoum\asserter;
@@ -940,7 +940,7 @@ class Client extends atoum\test
         ));
 
         // use the bundled cert from the start
-        Facebook\Api\Client::$CURL_OPTS[CURLOPT_CAINFO] = __DIR__ . '/../../../library/Facebook/Api/fb_ca_chain_bundle.crt';
+        Facebook\Api\Client::$CURL_OPTS[CURLOPT_CAINFO] = __DIR__ . '/../../../src/Facebook/Api/fb_ca_chain_bundle.crt';
         
         $response = $facebook->api('/naitik');
 
