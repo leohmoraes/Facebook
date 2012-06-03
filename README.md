@@ -17,7 +17,7 @@ have is:
 
     namespace YourAppNamespace;
     
-    require 'Facebook/Library/Facebook/Api/Client.php';
+    require 'Facebook/src/Facebook/Api/Client.php';
     
     use Facebook;
     
