@@ -1,7 +1,7 @@
 Facebook PHP5.3+ SDK (v.3.1.1)
 ==========================
 
-[![Build Status](https://secure.travis-ci.org/euskadi31/Facebook.png)](http://travis-ci.org/euskadi31/Facebook)
+[![Build Status](https://secure.travis-ci.org/euskadi31/Facebook.png?branch=master)](http://travis-ci.org/euskadi31/Facebook)
 
 The [Facebook Platform](http://developers.facebook.com/) is
 a set of APIs that make your app more social
