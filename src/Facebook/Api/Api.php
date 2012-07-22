@@ -11,8 +11,6 @@
  */
 namespace Facebook\Api;
 
-require_once __DIR__ . '/Exception.php';
-
 use RuntimeException;
 
 /**

@@ -11,8 +11,6 @@
  */
 namespace Facebook\Api;
 
-require_once __DIR__ . '/Api.php';
-
 /**
  * Extends the Facebook\Api\Api class with the intent of using
  * PHP sessions to store user ids and access tokens.
