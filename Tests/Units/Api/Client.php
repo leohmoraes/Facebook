@@ -40,7 +40,7 @@ class Client extends atoum\test
         $this->setTestNamespace('Tests\Units');
         parent::__construct($score, $locale, $adapter);
     }
-    
+
     public function testConstructor()
     {
         $facebook = new TransientFacebook(array(
