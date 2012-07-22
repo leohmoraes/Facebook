@@ -8,16 +8,24 @@ This repository contains the open source PHP5.3+ SDK that allows you to access F
 is licensed under the Apache Licence, Version 2.0
 (http://www.apache.org/licenses/LICENSE-2.0.html)
 
+Install
+-------
+
+Use [Composer.phar](http://getcomposer.org/)
+
+    cd Facebook/
+    curl -s https://getcomposer.org/installer | php
+    php composer.phar install
 
 Usage
 -----
 
-The [examples][examples] are a good place to start. The minimal you'll need to
+The examples are a good place to start. The minimal you'll need to
 have is:
 
     namespace YourAppNamespace;
     
-    require 'Facebook/src/Facebook/Api/Client.php';
+    require __DIR__ . '/vendor/autoload.php';
     
     use Facebook;
     
