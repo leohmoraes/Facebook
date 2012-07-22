@@ -11,12 +11,12 @@
  */
 namespace Facebook\Api\Tests\Units;
 
-require_once __DIR__ . '/../../../src/mageekguy.atoum.phar';
 require_once __DIR__ . '/../../../src/Facebook/Api/Exception.php';
 require_once __DIR__ . '/../../../src/Facebook/Api/Api.php';
 require_once __DIR__ . '/../../../src/Facebook/Api/Client.php';
 
 use mageekguy\atoum;
+use mageekguy\atoum\factory;
 use mageekguy\atoum\asserter;
 use mageekguy\atoum\asserters;
 use Facebook;
@@ -35,10 +35,10 @@ class Client extends atoum\test
     private static $kSignedRequestWithBogusSignature    = '1sxR32U4SW9m6QnSxwCEw_CObqsllXhnpP5j2pxD97c.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyODEwNTI4MDAsIm9hdXRoX3Rva2VuIjoiMTE3NzQzOTcxNjA4MTIwfDIuVlNUUWpub3hYVVNYd1RzcDB1U2g5d19fLjg2NDAwLjEyODEwNTI4MDAtMTY3Nzg0NjM4NXx4NURORHBtcy1nMUM0dUJHQVYzSVdRX2pYV0kuIiwidXNlcl9pZCI6IjE2Nzc4NDYzODUifQ';
     
     
-    public function __construct(score $score = null, locale $locale = null, adapter $adapter = null)
+    public function __construct(factory $factory = null)
     {
-        $this->setTestNamespace('Tests\Units');
-        parent::__construct($score, $locale, $adapter);
+        $this->setTestNamespace('Tests\\Units');
+        parent::__construct($factory);
     }
 
     public function testConstructor()
