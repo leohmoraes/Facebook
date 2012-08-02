@@ -15,7 +15,7 @@
         "php": ">=5.3.0",
         "ext-curl": "*",
         "ext-json": "*",
-        "mageekguy/atoum": "master-dev"
+        "mageekguy/atoum": "dev-master"
     },
     "autoload": {
         "psr-0": { 
